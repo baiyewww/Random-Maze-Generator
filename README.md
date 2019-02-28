@@ -1,7 +1,7 @@
 # Random-Maze-Generator
 ## Get start
 ***·Exhibition of works***
-### ![image](D:\Py1\GIF.gif) ###
+### ![image](https://github.com/baiyewww/Random-Maze-Generator/blob/master/GIF.gif) ###
 
 ***·requirements***
 ### 
