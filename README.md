@@ -1,12 +1,45 @@
 # Random-Maze-Generator
+
 ## Get start
+
 ***·Exhibition of works***
-### ![image](https://github.com/baiyewww/Random-Maze-Generator/blob/master/GIF.gif) ###
+
+### ![image](https://github.com/baiyewww/Random-Maze-Generator/blob/master/imgs/GIF.gif) ###
 
 ***·requirements***
-### 
+
+```
     numpy=1.15.0
     opencv-python 
+```
+
+***·usage***
+
+```
+$ python random_maze --width <width> --height <height> --unitsize <unitsize> --start <start> --end <end>
+```
+
+Default config:
+
+* width = 30, the row contains 30 units
+* height = 30, the col contains 30 units
+* unitsize = 10, the size of unit is 10*10 pixel
+* start = (0, 0), the beginning point is (0, 0)
+* end = (29, 29),  the destination point is (29, 29)
+
+
+***·procedure***
+
+> Step1: Initialize the basic canvas by OpenCV
+
+> Step2: Initialize the basic draw-line function by OpenCV
+
+> Step3: Find a random path from the <start> to the <end>
+
+> Step4: Use draw-line function and show the dynamic processing according to the path
+
+> Step5: Traverse all units and randomly build the wall in four directions, and avoid the path
+
     
 ***·operating principle***
 
@@ -21,21 +54,24 @@ Immediately following if J = end, return; Since it is recursive, the return is n
 
 ***·pseudocode***
 
- path=[]
- 
- flag=false
- 
- bfs（i）：
- 
-    if i上下左右有打印过：
-            return
-        print（i）  
-        if Flag == false；
-            path.append（i）
-        if i == end；
-            Flag = True
-            
-   bfs（i上下左右）  
+
+BFS:
+
+```
+path = []
+flag = False
+
+bfs(i):
+    if i has been visited:
+        return
+    visit i
+    if Flag == False:
+        path.append(i)
+    if i == end:
+        Flag = True
+
+```
+
    
 
   
