@@ -34,7 +34,7 @@ Default config:
 
 > Step2: Initialize the basic draw-line function by OpenCV
 
-> Step3: Find a random path from the \<start>\ to the \<end>\
+> Step3: Find a random path from the \<start\>to the \<end\>
 
 > Step4: Use draw-line function and show the dynamic processing according to the path
 
